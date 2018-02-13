@@ -12,5 +12,8 @@ $('input').on('keyup', function(key){
 
 for (var i = 0; i < 100; i++) {
   var newDivElem = $('<div>', {'class': 'square'});
+  newDivElem.click(function(){
+    $(this).css('backgroundColor', 'green');
+  });
   $('.container').append(newDivElem);
 }
