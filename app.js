@@ -35,7 +35,11 @@ $('.stamp').find('button').click(function(){
 
   $.ajax(options).done(function(response){
     console.log(response)
-    $('.square').css('background-image', 'url(' + response.Poster + ')')
+    $('.square').mouseover(function(){
+      $(this).css({
+        'background-image': 'url(' + response.Poster + ')',
+        'background-size': '100%'})
+    })
   });
 })
 
