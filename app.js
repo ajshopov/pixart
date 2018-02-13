@@ -16,7 +16,10 @@ $('.brush').find('input').on('keyup', function(key){
 for (var i = 0; i < 100; i++) {
   var newDivElem = $('<div>', {'class': 'square'});
   newDivElem.mouseover(function(){
-    $(this).css('backgroundColor', inputColour);
+    $(this).css({
+      'backgroundColor': inputColour,
+      'background-image': 'none'
+    });
   });
   $('.container').append(newDivElem);
 }
@@ -42,4 +45,6 @@ $('.stamp').find('button').click(function(){
     })
   });
 })
+
+
 
