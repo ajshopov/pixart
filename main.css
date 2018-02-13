@@ -4,3 +4,15 @@
   border: 1px solid black;
   display: inline-block;
 }
+
+.square{
+  width: 20px;
+  height: 20px;
+}
+
+.container{
+  width: 201px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;    
+}
